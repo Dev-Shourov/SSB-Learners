@@ -1,0 +1,507 @@
+/* global css starts */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap');
+body {
+    font-family: "Mulish",sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+}
+.mt-n-10{
+	margin-top: -10px;
+}
+.ml-n-30{
+	margin-left: -30px;
+}
+.mg-t-30{
+	margin-top: 30px;
+}
+.mg-t-200{
+	margin-top: 100px;
+}
+.pd-t-150{
+	padding-top: 200px;
+}
+.pd-b-40{
+	padding-bottom: 40px;
+}
+.pd-b-20{
+	padding-bottom: 20px;
+}
+h1{
+	font-family: "Josefin Sans",sans-serif;
+	font-size: 60px;
+	font-weight: 700;
+    color: #fff;
+}
+h3{
+	font-family: "Josefin Sans",sans-serif;
+	font-size: 42px;
+	font-weight: 700;
+    color: #4255A4;
+}
+h5{
+	font-family: "Josefin Sans",sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+    color: #4255A4;
+}
+/* global css ends */
+
+/* --::: header css starts :::-- */
+/* header */
+.header{
+	height: 100px;
+	padding: 40px 10px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+}
+.header.fixed{
+	opacity: 0;
+	transform: translateY(-50%);
+}
+.header.active{
+	background: linear-gradient(to bottom, #c054ff 0%, #5274ff 100%);
+	transition: all 0.4s ease-in-out;
+	opacity: 1;
+	transform: none;
+}
+.container-fluid{
+	padding: 0 200px;
+}
+.course-logo{
+	width: 150px;
+}
+.nav-text{
+	color: #fff;
+	font-family: "Mulish",sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+    text-transform: capitalize;
+    padding: 0 25px;
+}
+.button{
+	border: 1px #f8f8f800 solid;
+	border-radius: 4px;
+	padding: 13px 25px;
+	margin-top: -13px;
+	cursor: pointer;
+    position: relative;
+}
+.button::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0%;
+	height: 108%;
+	z-index: -1;
+	transition: 0.5s cubic-bezier(1, 2, 0.2, 0.6);
+	overflow: hidden;
+}
+.btn-cta{
+	margin-right: 20px;
+	background: #FF9F67;
+	overflow: hidden;
+}
+.btn-cta:hover{
+	border: 1px #AE59FF solid;
+}
+.btn-cta::before{
+	background: #AE59FF;
+	z-index: 1;
+}
+.btn-cta:hover::before{
+	width: 100%;
+}
+.btn-ghost{
+	border: 1px #E2E4FF solid;
+	background: none;
+	overflow: hidden;
+}
+.btn-ghost:hover{
+	border: 1px #FF9F67 solid;
+}
+.btn-ghost::before{
+	background: #FF9F67;
+	top: 0;
+}
+.btn-ghost:hover::before{
+	width: 100%;
+}
+.btn-text{
+	position: relative;
+	font-family: "Mulish",sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    z-index: 10;
+}
+/* a:hover{
+	color:#fff !important;
+} */
+/* header */
+/* --::: header css ends :::-- */
+
+/* --::: Course Banner css starts :::-- */
+.course-banner{
+	background: url('../img/hero2.png') center center no-repeat;
+	background-size: cover;
+	height: 450px;
+	position: relative;
+}
+.banner-wraper{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.banner-box{
+	padding-top: 210px;
+}
+.search-wrapper{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(183 153 255 / 88%);
+    max-width: 550px;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+.search-box{
+	padding-top: 400px;
+}
+.search-wrapper .input {
+    width: 85%;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.searchbtn {
+    background: #ffec00;
+    width: 10%;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+.searchbtn .fas{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+}
+/* --::: Course Banner css ends :::-- */
+
+/* --::: Course Body css starts :::-- */
+.course-body{
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.branch-box{
+	padding-bottom: 80px;
+}
+.course-card{
+	box-shadow: 0px 6px 6px 0px rgb(2 25 65 / 8%);
+    border-radius: 10px;
+    margin: 0 15px;
+    overflow: hidden;
+}
+.card-img{
+	height: 200px;
+}
+.card-info{
+	padding: 29px 20px 20px 20px;
+}
+.btn-badge{
+	display: inline-block;
+	padding: 5px 10px;
+	font-family: "Josefin Sans",sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	color: #4FC68D;
+	border: 2px #4FC68D solid;
+	border-radius: 25px;
+}
+.mentor{
+	font-size: 16px;
+	font-weight: 600;
+}
+.mentor span{
+	font-family: "Josefin Sans",sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	color: #4FC68D;
+}
+.class-text{
+	font-size: 16px;
+	font-weight: 600;
+}
+.class-num{
+	font-family: "Josefin Sans",sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	color: #000;
+}
+.card-btn{
+	width: 100%;
+    text-align: center;
+    border: 1px solid #E2E4FF;
+    font-family: "Josefin Sans",sans-serif;
+    background: none;
+    border-radius: 5px;
+    text-transform: capitalize;
+    padding: 17px 42px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none !important;
+    color: #4255A4;
+    margin-bottom: 0;
+    position: relative;
+    overflow: hidden;
+}
+.card-btn:hover{
+	color: #fff;
+}
+.card-btn::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 0%;
+	z-index: -1;
+	background: #FF9F67;
+	transition: 0.3s cubic-bezier(1, 2, 0.2, 0.6);
+}
+.card-btn:hover::before{
+	height: 100%;
+}
+.course-card:hover #card-btn1{
+	background: #FF9F67;
+	color: #fff;
+	transition: 0.3s linear;
+}
+/* --::: Course Body css ends :::-- */
+
+/* --::: Student Dashboard css starts :::-- */
+.img-std-profile{
+	width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid violet;
+}
+.profile-tab-nav {
+    min-width: 280px;
+    min-height: 600px;
+}
+.nav-pills a.nav-link {
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0;
+    color: #333;
+}
+.nav-pills .nav-link.active{
+	background-color: #ae59ff;
+}
+.tab-pane .form-control:focus{
+	border: 1px solid #ae59ff;
+}
+.std-btn{
+	position: relative;
+    background: #ae59ff;
+    color: #fff;
+    border-radius: 0;
+    font-size: 18px;
+    padding: 11px 50px;
+    z-index: 1;
+    transition: 0.4s ease-in-out;
+}
+.std-btn:hover{
+	color: #fff;
+}
+.border-gr{
+	border: 1px solid #ced4da;
+}
+.dash-text{
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 1.3em;
+	color: #4255A4;
+}
+/* --::: Student Dashboard css ends :::-- */
+
+/* --::: Admission css starts :::-- */
+.border-no{
+	border: none;
+}
+.si-left{
+	position: relative;
+}
+.si-left::after{
+	content: "";
+	position: absolute;
+    right: -50px;
+    width: 1px;
+    height: 80%;
+    top: 10%;
+    background: rgba(0,0,0,.1);
+}
+.pd-ts{
+	padding: 10px 0px;
+}
+.btn-coupon{
+	background: #4FC68E;
+    color: #fff;
+    font-size: 16px;
+	padding: 13px 30px;
+    border-radius: 0;
+}
+.btn-coupon:hover{
+	background: #ae59ff;
+	color: #fff;
+}
+.ad-txt{
+	font-family: 'Mulish';
+    font-size: 26px;
+    font-weight: 700;
+    color: #4255A4;
+}
+/* --::: Admission css ends :::-- */
+
+/* --::: Contact css starts :::-- */
+.contact-info {
+    background: #00aeef;
+    padding: 40px 30px 20px;
+}
+span.divder {
+    display: inline-block;
+    position: relative;
+    font-size: 22px;
+    color: #07324f;
+    line-height: 32px;
+    font-weight: 700;
+}
+span.divder:before {
+    background-color: #ddd;
+    content: '';
+    display: block;
+    width: 520px;
+    left: 100%;
+    margin-left: 30px;
+    top: 50%;
+    margin-top: -0.5px;
+    height: 1px;
+    position: absolute;
+}
+.contact-info h4 {
+    color: #fff;
+    font-size: 18px;
+    margin-top: 15px;
+	margin-bottom: 10px;
+    line-height: 24px;
+    font-weight: 700;
+}
+.contact-info p {
+    color: #fff;
+	font-weight: 400;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+}
+.contact-info .fa-map-o, .contact-info .fa-phone {
+    color: #fff;
+    font-size: 18px;
+    line-height: 34px;
+}
+.fa-map-o:before {
+    content: "\f278";
+}
+.contact-info .social-media {
+    margin: 25px 0;
+}
+.contact-info .social-media ul {
+    padding: 0;
+}
+.contact-info .social-media ul li {
+    list-style: none;
+    display: inline;
+    color: #fff;
+    margin-right: 15px;
+}
+.contact-info .social-media ul li .fa {
+    color: #fff;
+    font-size: 26px;
+    transition: 0.3s ease-in-out;
+}
+/* --::: Contact css ends :::-- */
+
+/* --::: Footer css starts :::-- */
+
+.main-footer{
+	background: rgb(66, 85, 164);
+	padding-top: 100px;
+	padding-bottom: 20px;
+}
+.main-footer p{
+	color: #fff;
+	font-family: "Mulish",sans-serif;
+	padding-right: 52px;
+    font-size: 16px;
+    margin-bottom: 50px;
+    line-height: 1.8;
+}
+.main-footer h4{
+	color: #fff;
+	font-family: "Josefin Sans",sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+	margin-top: 0px;
+	margin-bottom: 29px;
+}
+.footer-ul li{
+	margin-bottom: 15px;
+	list-style: none;
+}
+.footer-ul li a{
+	color: #fff;
+	font-family: "Mulish",sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+/* --::: Footer css starts :::-- */
+
+/* --::: 16' to 13' SCRENE VIEW */
+@media (max-width: 1600px) {
+	/* header css */
+	.container-fluid{
+		padding: 0 40px;
+	}
+	.nav-text{
+		font-size: 16px;
+	}
+	.btn-text{
+		font-size: 16px;
+	}
+}

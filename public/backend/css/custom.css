@@ -1,0 +1,50 @@
+.btn-grouped{
+    padding: 5px 10px !important;
+}
+.text-bold{
+    font-size: 18px;
+    font-weight: 900;
+}
+.label-color{
+    color: #696060;
+}
+.add-list{
+    list-style: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0;
+}
+.badge-pd{
+    padding: 5px 15px;
+}
+.mentor-img{
+    border: 1px solid;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    height: 45px;
+    width: 45px;
+}
+.bold-txt{
+    color: #373737;
+    font-weight: 700;
+}
+.light-txt{
+    color: #868ba1;
+    font-weight: 500;
+}
+.btn-card{
+    padding: 4px 15px;
+    font-size: 12px;
+}
+.course-img{
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+}
+.ver-align-md{
+    vertical-align: middle !important;
+}
+.td-width{
+    width: 20%;
+}
